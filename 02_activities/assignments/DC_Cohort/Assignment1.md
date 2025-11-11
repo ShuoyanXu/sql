@@ -106,6 +106,11 @@ Please do not pick the exact same tables that I have already diagrammed. For exa
 	- <img src="./images/01_farmers_market_conceptual_model.png" width="600">
 - The column names can be found in a few spots (DB Schema window in the bottom right, the Database Structure tab in the main window by expanding each table entry, at the top of the Browse Data tab in the main window)
 
+
+<img src="./images/01_ans.png" width="500">
+
+
+
 ***
 
 ## Section 2:
@@ -205,5 +210,6 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+The article "When Databases Get to Define Family" is fascinating because it echoes Foucault’s notion of discipline: social discourse shapes human behavior and perception. Similar to Foucault’s idea that power operates through everyday norms, databases function as technological embodiments of discourse, enforcing a specific definition of what a "family" should be. Once an idea is encoded into a system, the system reflects and reinforces existing social beliefs.
+In this case, NADRA’s database transforms social expectations into computational rules, presenting them as neutral and objective. However, this "neutral" system marginalizes groups such as single mothers and nontraditional families, effectively disciplining citizens through code. This becomes a form of the "tyranny of the majority," justified in the name of technology.
 ```
