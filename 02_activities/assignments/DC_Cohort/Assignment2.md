@@ -53,8 +53,13 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
+<img src="./images/Picture1.png" width="900">
+
 ```
-Your answer...
+The store can store customer addresses in two different ways.
+The first option is an overwrite model, where only the customer’s current address is kept. In this approach, when a customer moves, the existing address record is simply updated. The previous address is not saved. This design is known as a Type 1 Slowly Changing Dimension, because changes overwrite the old values.
+
+The second option is a history model, where every address change creates a new row in the table. Each record includes a start date, an end date, and a flag showing which address is the current one. Older addresses remain in the table so the store can see where the customer lived in the past. This approach is a Type 2 Slowly Changing Dimension, because it preserves the full history of changes.
 ```
 
 ***
@@ -183,5 +188,8 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+Most people will highlight the intelligence that seems to come from the machine or the specific algorithms such as neural networks. Many will assume that the model itself holds the intelligence, but in reality the most important part is the quality of the data or the human teacher behind it. The human teacher decides how well the model will behave, and the neural network is more like a simulator trying to imitate that type of intelligence. However, data labeling is treated as a kind of low-status work that few people appreciate. It is essential, yet it stays almost completely invisible in discussions about progress in artificial intelligence.
+What Vicki Boykis points out is that every layer of what we call “machine intelligence” is built on layers of human effort. People collect the data, people label it, people decide what counts as a correct answer, and people make choices about how the model should be designed and trained. Neural networks do not suddenly discover intelligence on their own. They carry the patterns, assumptions, and even mistakes of the people who shaped the data. In this way, modern artificial intelligence is not a separate form of intelligence at all. It is a very large system that stores and amplifies human judgment.
+Another reason this human work is overlooked is that the standards for these tasks are often set very low. Almost anyone can be hired to do basic labeling, so the contribution is treated as replaceable. As a result, people pay more attention to the scientist who presents a new model, and almost no attention to the thousands of workers who created the dataset that made the model possible. These people rarely receive recognition, even though their decisions directly shape how the model thinks.
+There is also a cultural reward system that encourages this imbalance. For example, very few people know who is Fei-Fei Li Phd students, but many people know that Geoffrey Hinton advised Ilya Sutskever, who is often described as someone who changed the direction of human progress. This kind of reward structure makes it easy to celebrate the visible “genius” at the top while ignoring the many people who do the so-called “dirty work” underneath. When society rewards only the most glamorous part of the process, it becomes natural for everyone to underestimate the value of quiet, foundational labor.
 ```
